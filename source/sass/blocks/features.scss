@@ -62,10 +62,11 @@
 
 @media(min-width: $desktop) {
     .features {
-        margin-bottom: -48px;
+        margin-bottom: -34px;
 
         &__list {
             justify-content: space-between;
+            top: -142px;
         }
 
         &__item {
