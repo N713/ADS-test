@@ -1,13 +1,13 @@
 .difference {
     padding-top: 88px;
     padding-bottom: 215px;
-    background-image: url('../../img/footer-back-mob.png');
+    background-image: url('../img/footer-back-mob.png');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dppx) {
-        background-image: url('../../img/footer-back-mob@2x.png');
+        background-image: url('../img/footer-back-mob@2x.png');
     }
 
     &__header {
@@ -59,10 +59,10 @@
 
 @media(min-width: $tablet) {
     .difference {
-        background-image: url('../../img/footer-back-full.png');
+        background-image: url('../img/footer-back-full.png');
 
         @media (min-resolution: $retina-dppx) {
-            background-image: url('../../img/footer-back-full@2x.png');
+            background-image: url('../img/footer-back-full@2x.png');
         }
 
         &__item {

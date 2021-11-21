@@ -1,5 +1,5 @@
 .top {
-    background-image: url('../../img/girl.jpg');
+    background-image: url('../img/girl.jpg');
     background-position: center left 75%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,7 +7,7 @@
     color: $whiteColor;
 
     @media (min-resolution: $retina-dppx) {
-        background-image: url('../../img/girl@2x.jpg');
+        background-image: url('../img/girl@2x.jpg');
     }
 
     &::after {
