@@ -82,6 +82,18 @@
             margin-right: 58px;
         }
 
+        &__list {
+            max-width: 600px;
+            flex-wrap: wrap;
+        }
+
+        &__item,
+        &__link {
+            max-width: 100px;
+            word-wrap: wrap;
+            word-break: break-all;
+        }
+
         &__icons {
             margin-right: 22px;
         }
