@@ -1,0 +1,186 @@
+.experience {
+    padding-top: 107px;
+    padding-bottom: 80px;
+    overflow-x: hidden;
+
+    &__comments {
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+
+    &__list {
+        margin-bottom: 98px;
+        display: flex;
+    }
+
+    &__item {
+        min-width: 100%;
+        visibility: hidden;
+    }
+
+    &__item.swiper-slide-active {
+        visibility: visible;
+    }
+
+    &__category {
+        margin-bottom: 30px;
+    }
+
+    &__header {
+        margin-bottom: 70px;
+        box-sizing: border-box;
+    }
+
+    &__first {
+        position: relative;
+        min-height: 92vw;
+        margin-bottom: 68px;
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__image:first-of-type {
+        z-index: 3;
+        width: 83%;
+    }
+
+    &__image:last-of-type {
+        top: 77px;
+        left: 0;
+        width: 90%;
+    }
+
+    &__item-name {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+        margin-bottom: 23px;
+    }
+
+    &__item-text {
+        text-align: left;
+        margin-bottom: 27px;
+    }
+
+    &__signature {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: right;
+        letter-spacing: 0.2px;
+        color: $textSecondColor;
+    }
+
+    &__controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 175px;
+        margin: 0 auto;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: 0.2px;
+        color: $textSecondColor;
+    }
+}
+
+@media(min-width: $tablet) {
+    .experience {
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__first,
+        &__second {
+            width: 49%;
+        }
+
+        &__first {
+            margin-right: 66px;
+            min-height: 34.2vw;
+        }
+    }
+}
+
+@media(min-width: $desktop) {
+    .experience {
+        padding-top: 72px;
+        padding-bottom: 152px;
+
+        &__category {
+            margin-bottom: 10px;
+        }
+
+        &__header {
+            max-width: 375px;
+            margin: 0 auto;
+            margin-bottom: 80px;
+
+            br {
+                display: none
+            }
+        }
+
+        &__comments {
+            padding: 0;
+        }
+
+        &__wrapper {
+            justify-content: flex-start;
+        }
+
+        &__first {
+            width: 570px;
+            min-height: auto;
+        }
+
+        &__second {
+            padding-top: 53px;
+            width: 345px;
+        }
+
+        &__image:first-of-type,
+        &__image:last-of-type {
+            width: auto;
+
+        }
+
+        &__controls {
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        &__signature {
+            width: 100%;
+            display: inline-block;
+            text-align: right;
+        }
+
+        &__image:first-of-type {
+            right: 3px;
+        }
+
+        &__image:last-of-type {
+            top: 15px;
+        }
+
+        &__text {
+            margin-bottom: 28px;
+        }
+
+        &__list {
+            margin-bottom: 50px;
+        }
+
+        &__controls {
+            padding-right: 76px;
+        }
+    }
+}

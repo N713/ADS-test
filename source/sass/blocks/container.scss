@@ -1,0 +1,13 @@
+.container {
+    width: 100%;
+    max-width: $containerWidth;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media(min-width: $desktop) {
+    .container {
+        padding: 0;
+    }
+}

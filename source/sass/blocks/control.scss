@@ -1,0 +1,30 @@
+.control {
+    @include reset();
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    border: none;
+    background-color: transparent;
+    margin-left: 32.5px;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        transition: all 0.6s;
+    }
+
+    &:active {
+        opacity: 0.4;
+    }
+
+    &:hover svg,
+    &:focus svg {
+        path {
+            transition: all 0.6s;
+            fill: $mainColor;
+        }
+    }
+}

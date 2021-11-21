@@ -1,0 +1,124 @@
+.difference {
+    padding-top: 88px;
+    padding-bottom: 215px;
+    background-image: url('../../img/footer-back-mob.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dppx) {
+        background-image: url('../../img/footer-back-mob@2x.png');
+    }
+
+    &__header {
+        color: $whiteColor;
+        padding: 0 30px;
+        box-sizing: border-box;
+        margin-bottom: 93px;
+    }
+
+    &__list {
+        text-align: center;
+        color: $whiteColor;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin: 0 auto;
+        margin-bottom: 71px;
+        width: 290px;
+        padding-right: 18px;
+    }
+
+    &__item:last-of-type {
+        margin-top: 28px;
+    }
+
+    &__image {
+        margin-bottom: -4px;
+        min-height: 85px;
+    }
+
+    &__number {
+        font-weight: 500;
+        font-size: 58px;
+        line-height: 80px;
+        letter-spacing: 0.2px;
+    }
+
+    &__name {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.1px;
+    }
+}
+
+@media(min-width: $tablet) {
+    .difference {
+        background-image: url('../../img/footer-back-full.png');
+
+        @media (min-resolution: $retina-dppx) {
+            background-image: url('../../img/footer-back-full@2x.png');
+        }
+
+        &__item {
+            padding-right: 0;
+        }
+
+        &__list {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        &__item:last-of-type {
+            margin-top: 0;
+        }
+    }
+}
+
+@media(min-width: $desktop) {
+    .difference {
+        border-radius: 384px 0 0 0;
+        padding-bottom: 38px;
+
+        &__header {
+            margin-bottom: 44px;
+        }
+
+        &__list {
+            margin-left: 0;
+            margin-right: auto;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        &__item {
+            width: 200px;
+            margin: 0;
+            margin-right: 50px;
+            margin-bottom: 75px;
+            padding-top: 25px;
+        }
+
+        &__item:nth-of-type(2n-1) {
+            position: relative;
+            left: -15px;
+        }
+
+        &__item:nth-of-type(3) &__image,
+        &__item:nth-of-type(4) &__image {
+            position: relative;
+            top: -10px;
+            right: 15px;
+        }
+
+        &__image {
+            min-height: 85px;
+            margin-bottom: -5px;
+        }
+    }
+}

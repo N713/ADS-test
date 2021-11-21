@@ -1,0 +1,54 @@
+.join {
+    width: 100%;
+    max-width: 240px;
+    min-height: 58px;
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__input {
+        @include reset();
+
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.51);
+        padding: 10px 25px;
+        padding-right: 100px;
+        border-radius: 4px;
+        background-color: rgba(249, 249, 249, 0.2);
+        color: $muteColor;
+    }
+
+    &__button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 89px;
+        border: none;
+        background-color: $mainColor;
+        color: $whiteColor;
+        border-radius: 0 4px 4px 0;
+
+        &:hover,
+        &:focus {
+            cursor: pointer;
+            transition: all 0.6s;
+            background-color: darken($mainColor, 15);
+        }
+
+        &:active {
+            opacity: 0.4;
+        }
+    }
+
+    &__input,
+    &__button {
+        min-height: 58px;
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+    }
+}

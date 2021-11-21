@@ -1,0 +1,122 @@
+.data {
+    background-color: $backgroundColor;
+    padding-top: 7px;
+    padding-bottom: 44px;
+
+    &__inner {
+        padding: 0 20px;
+    }
+
+    &__header {
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        margin-bottom: 80px;
+        padding: 0 30px;
+    }
+
+    &__tabs {
+        margin-bottom: 26px;
+        padding: 0 20px;
+    }
+
+    &__tab {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 30px;
+
+        &:hover,
+        &:focus {
+            cursor: pointer;
+            background-color: $whiteColor;
+            transition: all 0.6s;
+        }
+    }
+
+    &__tab.active {
+        background-color: $whiteColor;
+        border: 1px solid $borderSecondColor;
+        box-sizing: border-box;
+        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+        border-radius: 5px;
+    }
+
+    &__wrapper {
+        min-width: 45px;
+    }
+
+    &__wrapper:first-of-type {
+        margin-right: 19px;
+    }
+
+    &__items {
+        text-align: center;
+    }
+
+    &__name {
+        margin-bottom: 7px;
+    }
+}
+
+@media(min-width: 700px) {
+    .data {
+        &__info {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &__tabs {
+            max-width: 330px;
+            margin-right: 20px;
+            padding: 0;
+        }
+
+        &__items {
+            min-width: 450px;
+            max-width: 700px;
+        }
+    }
+}
+
+@media(min-width: $desktop) {
+    .data {
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        &__header {
+            margin-bottom: 13px;
+        }
+
+        &__text {
+            margin: 0 auto;
+            margin-bottom: 165px;
+            max-width: 600px;
+        }
+
+        &__info {
+            justify-content: space-between;
+        }
+
+        &__items {
+            min-width: 675px;
+            text-align: right;
+        }
+
+        &__item:last-of-type {
+            img {
+                min-width: 672px;
+            }
+        }
+
+        &__wrapper:first-of-type {
+            margin-right: 20px;
+        }
+
+        &__name {
+            margin-bottom: 7px;
+        }
+    }
+}
