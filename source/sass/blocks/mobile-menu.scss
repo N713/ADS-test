@@ -9,7 +9,7 @@
     }
 
     &__button {
-        @include reset();
+        @include reset;
 
         position: absolute;
         width: 20px;

@@ -22,7 +22,7 @@
     &__list,
     &__navigation-list,
     &__socials {
-        @include reset();
+        @include reset;
 
         list-style: none;
     }

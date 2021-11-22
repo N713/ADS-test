@@ -24,6 +24,8 @@
 
     &__category {
         margin-bottom: 30px;
+
+        @include red;
     }
 
     &__header {

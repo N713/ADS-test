@@ -1,5 +1,5 @@
 .control {
-    @include reset();
+    @include reset;
 
     display: flex;
     justify-content: center;

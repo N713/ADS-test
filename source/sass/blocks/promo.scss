@@ -7,6 +7,13 @@
 
     &__category {
         margin-bottom: 16px;
+        display: inline-block;
+        width: 100%;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        text-align: center;
     }
 
     &__header {
